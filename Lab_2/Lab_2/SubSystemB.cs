@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab_2
 {
-    class SubSystemB
+    public class SubSystemB
     {
-        public void OperationB()
+        public string OperationB()
         {
-            Console.WriteLine("SubSystem B");
+            return "SubSystem B";
         }
     }
 }

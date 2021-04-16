@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lab_2
 {
-    class Facade
+    public class Facade
     {
         SubSystemA subSystemA = new SubSystemA();
         SubSystemB subSystemB = new SubSystemB();
         SubSystemC subSystemC = new SubSystemC();
 
-        public void OperationAB()
+        public string OperationAB()
         {
-            subSystemA.OperationA();
-            subSystemB.OperationB();
+            return subSystemA.OperationA() + "\n" + subSystemB.OperationB();
         }
 
-        public void OperationBC()
+        public string OperationBC()
         {
-            subSystemB.OperationB();
-            subSystemC.OperationC();
+            return subSystemB.OperationB() + "\n" + subSystemC.OperationC();
         }
     }
 }

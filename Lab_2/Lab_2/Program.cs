@@ -7,8 +7,8 @@ namespace Lab_2
         static void Main(string[] args)
         {
             Facade facade = new Facade();
-            facade.OperationAB();
-            facade.OperationBC();
+            Console.WriteLine(facade.OperationAB());
+            Console.WriteLine(facade.OperationBC());
 
         }
     }
